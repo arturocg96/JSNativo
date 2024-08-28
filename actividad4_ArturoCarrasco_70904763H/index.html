@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito de la Compra</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="carrito">
+      <div class="carrito__seccion-tabla">
+        <table class="carrito__tabla">
+          <thead>
+            <tr class="carrito__tabla-cabecera">
+              <th class="carrito__tabla-cabecera-item">Producto</th>
+              <th class="carrito__tabla-cabecera-item">Cantidad</th>
+              <th class="carrito__tabla-cabecera-item">Unidad (€)</th>
+              <th class="carrito__tabla-cabecera-item">Total (€)</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="carrito__resumen">
+        <h2 class="carrito__resumen-titulo">Total</h2>
+        <div class="carrito__resumen-items"></div>
+        <div class="carrito__resumen-total">
+          <span class="carrito__resumen-total-texto">Total: </span>
+          <span class="carrito__resumen-total-precio">0 €</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="Producto.js"></script>
+    <script src="Carrito.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
